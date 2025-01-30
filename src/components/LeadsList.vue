@@ -33,7 +33,7 @@
   <div>
     <!-- Header, which contains an input field, a search button filtered according to
          data from leads input, sort button (Opens a selection of sorting options) -->
-    <header class="flex m-4 justify-center space-x-2">
+    <header class="flex mb-4 justify-center space-x-2">
       <!--Input component and search button -->
       <SearchBar @search="handleSearch" />
       <!-- Select component and sort buttons -->
@@ -46,12 +46,12 @@
       <!-- Wrapper for header and page navigation -->
       <div class="flex flex-col items-center my-8 md:flex-row md:justify-between md:items-center md:my-8">
         <!-- Page title -->
-        <h1 class="text-2xl font-bold mb-4 md:mb-0">Lista potencjalnych klientów</h1>
+        <h1 class="text-white text-4xl md:text-5xl font-extrabold tracking-wide shadow-md drop-shadow-lg mb-6 md:mb-2">Lista potencjalnych klientów</h1>
       
         <!-- Page navigation -->
         <div class="flex items-center space-x-4">
           <!-- Current page from the total -->
-          <h3 class="text-gray-600">Strona:</h3>
+          <h3 class="text-white">Strona:</h3>
           <!-- Back button -->
           <button
             @click="prevPage"
@@ -64,7 +64,7 @@
             </svg>
           </button>
         
-          <span class="text-gray-600 font-medium">
+          <span class="text-white font-medium">
             {{ currentPage }} z {{ totalPages }}
           </span>
         
@@ -126,6 +126,7 @@ const appliedQuery = ref(''); // Applied filtering query
 
 const handleSearch = (query) => {
   appliedQuery.value = query; // Apply the search string when the button is pressed
+  currentPage.value = 1; //Return to the first page
 };
 // Reactive variable for the selected sort method
 const sortBy = ref('');

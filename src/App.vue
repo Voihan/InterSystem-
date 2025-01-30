@@ -8,7 +8,7 @@
   -->
 
 <template>
-  <div>
+  <div class="bg-gray-900 p-8 shadow min-h-screen">
     <!-- Parent component for the entire page component -->
     <ParentLeadList></ParentLeadList>
   </div>
