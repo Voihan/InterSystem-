@@ -46,12 +46,12 @@
       <!-- Wrapper for header and page navigation -->
       <div class="flex flex-col items-center my-8 md:flex-row md:justify-between md:items-center md:my-8">
         <!-- Page title -->
-        <h1 class="text-white text-4xl md:text-5xl font-extrabold tracking-wide shadow-md drop-shadow-lg mb-6 md:mb-2">Lista potencjalnych klientów</h1>
+        <h1 class="bg-white p-4 text-green-500 text-4xl md:text-5xl font-extrabold tracking-wide shadow-md drop-shadow-lg mb-6 md:mb-2">Lista potencjalnych klientów</h1>
       
         <!-- Page navigation -->
         <div class="flex items-center space-x-4">
           <!-- Current page from the total -->
-          <h3 class="text-white">Strona:</h3>
+          <h3 class="text-black">Strona:</h3>
           <!-- Back button -->
           <button
             @click="prevPage"

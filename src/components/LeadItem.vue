@@ -21,7 +21,7 @@
 
 <template>
   <!-- Main box of one lead -->
-  <div class="border-2 bg-white p-4 rounded-lg shadow mb-4">
+  <div class="border-2 bg-white p-4 rounded-lg shadow mb-4 ">
     <!-- Main row -->
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
       <!-- Left side: Basic information -->
@@ -61,7 +61,7 @@
 
       
       <!-- Central part: Message -->
-      <div class="sm:flex-1 border-x-4 border-green-500 sm:border-x-4 sm:pl-4 p-4 sm:pt-0 m-4">
+      <div class="sm:flex-1 border-x-2 border-green-500 sm:border-x sm:pl-4 p-4 sm:pt-0 m-4">
         <div class="flex justify-between items-start">
           <!-- Title and date -->
           <h4 class="text-lg font-semibold text-right sm:text-left">Wiadomość:</h4>
