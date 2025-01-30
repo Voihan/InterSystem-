@@ -64,7 +64,7 @@
             </svg>
           </button>
         
-          <span class="text-white font-medium">
+          <span class="text-black font-medium">
             {{ currentPage }} z {{ totalPages }}
           </span>
         
