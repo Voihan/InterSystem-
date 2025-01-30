@@ -47,7 +47,7 @@
       >
 
       <!-- Text before sorting options -->
-      <div class="bg-green-500 px-4 py-2 text-sm font-semibold text-white border-b">
+      <div class="bg-green-500 px-4 py-2 text-sm font-semibold text-white border-b rounded-lg">
       Sortuj według:
       </div>
       <!-- List with sorting options -->
@@ -59,7 +59,7 @@
             v-for="option in sortOptions"
             :key="option.value"
             @click="selectSortOption(option.value)"
-            class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+            class="px-4 py-2 hover:bg-gray-300 cursor-pointer rounded-lg"
           >
           <!-- Display text label for option -->
             {{ option.label }}
@@ -81,7 +81,7 @@
     { value: 'date', label: 'Data' },
     { value: 'alphabet', label: 'Alfabet' },
     { value: 'websiteId', label: 'Website ID' },
-    { value: 'region', label: 'Wojewódstwo' },
+    { value: 'region', label: 'Województwo' },
     { value: 'hasMessage', label: 'Zostawiona wiadomośc' },
   ];
   
